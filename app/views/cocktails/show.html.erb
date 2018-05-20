@@ -1,2 +1,11 @@
-<h1><%= @cocktail.name %></h1>
-<p>Description :</p>
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+    <p>Description :</p>
+    <%= link_to root_path, class:'btn' do %>
+    <span><i class="fas fa-undo-alt"></i></span>
+    <span> BACK TO LIST</span>
+    <% end %>
+</div>
+
+
+

@@ -1,0 +1,38 @@
+.btn {
+  position: relative;
+  color: white;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.27);
+  padding: 5px 50px 5px 25px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #4e87e4 0%,#0259f0 100%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  span {
+    font-weight: lighter;
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  background: linear-gradient(to bottom, #3b7be6 0%,#0b357e 100%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fa-caret-right {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.fa-undo-alt{
+  position: absolute;
+  top: 8px;
+  right: 17px;
+  font-size: 18px;
+}
