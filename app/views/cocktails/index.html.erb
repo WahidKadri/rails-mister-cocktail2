@@ -1,7 +1,7 @@
 <div class="banner">
   <div class="banner-content">
     <h1>Mister Cocktails</h1>
-    <%= link_to new_cocktail_path, class:'btn add' do %>
+    <%= link_to new_cocktail_path, class:'btn right' do %>
      <span>ADD A COCKTAIL</span>
      <span><i class="fas fa-caret-right"></i></span>
     <% end %>
@@ -13,4 +13,3 @@
   <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
     <% end %>
 </ul>
-

@@ -1,0 +1,24 @@
+<h1 class="text-center">Add a new Description</h1>
+<hr>
+<div class="container">
+  <div class="row">
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <div class="col-xs-4 col-xs-offset-4">
+      <% if @dose.errors.any? %>
+          <div class="errors-container">
+            <ul>
+              <% @dose.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+    </div>
+    <div class="col-xs-4 col-xs-offset-4">
+      <%= f.submit "ADD DESCRIPTION", class: "btn form-control" %>
+      <% end %>
+    </div>
+  </div>
+</div>
