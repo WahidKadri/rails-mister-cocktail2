@@ -14,7 +14,7 @@
           </div>
         <% end %>
       <%= f.input :description %>
-      <%= f.association :ingredient %>
+      <%= f.association :ingredient, input_html: { class: 'select2' } %>
     </div>
     <div class="col-xs-4 col-xs-offset-4">
       <%= f.submit "ADD DESCRIPTION", class: "btn form-control" %>
